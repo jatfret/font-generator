@@ -13,10 +13,9 @@ checkNodeVer() // 检查 Node.js 版本
 program
     .version(require('../package.json').version, '-v, --version', '查看插件版本')
     .usage('<path> <path> [options]')
-    .option('-h, --help', '查看帮助')
-    .option('-n, --name', '字体文件名称', (val) => { option.name = val})
-    .option('-t, --types', '字体文件的种类，默认包括:["svg", "ttf", "woff", "woff2", "eot"]')
-    .option('-o, --order', '使用字体格式的顺序，默认为:["eot", "woff2", "woff", "ttf", "svg"]')
+    .option('-n, --name', 'font files name')
+    .option('-t, --types', 'font files type，include:["svg", "ttf", "woff", "woff2", "eot"]')
+    .option('-o, --order', 'font type order，default:["eot", "woff2", "woff", "ttf", "svg"]')
 
 program.parse(process.argv)
 
