@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./demo.css">
+  <style>
+    ul, li {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+    }
+    .container {
+      padding: 20px 50px;
+      min-width: 1200px;
+      overflow: hidden;
+    }
+    .container h1 {
+      border-bottom: 1px solid #ddd;
+    }
+    .container h1 span{
+      font-size: 20px;
+      color: #999999;
+    }
+    .icon-item {
+      float: left;
+      margin: 0 10px 10px 0;
+      width: 64px;
+      height: 64px;
+      line-height: 64px;
+      text-align: center;
+      background: #efefef;
+      border-radius: 2px;
+    }
+    .icon-item span{
+      line-height: 64px;
+      font-size: 32px;
+    }
+  </style>
+  <title>{{fontName}}</title>
+</head>
+<body>
+  <div class="container">
+    <h1>{{fontName}} <span>demo</span></h1>
+    <ul>
+      {{#each names}}
+      <li class="icon-item" title="{{this}}">
+        <span class="{{../baseClassName}} {{../classPrefix}}{{this}}"></span>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</body>
+</html>
