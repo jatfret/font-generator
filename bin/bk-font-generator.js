@@ -32,7 +32,7 @@ if (sourcePath) {
         
         const sourceFiles = []
         if (stat.isFile()) {
-            if (path.extname(sourcePath) !== 'svg') {
+            if (path.extname(sourcePath) !== '.svg') {
                 handleError('请传入合法的svg文件')
             }
             sourceFiles.push(path.join(sourcePath))
