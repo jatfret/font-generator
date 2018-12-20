@@ -22,8 +22,7 @@
     "webfonts-generator": "^0.4.0"
   },
   "devDependencies": {
-    "eslint": "^5.10.0",
-    "eslint-config-standard": "^12.0.0"
+    "eslint": "^5.10.0"
   },
   "engines": {
     "node": ">=v8.9"
