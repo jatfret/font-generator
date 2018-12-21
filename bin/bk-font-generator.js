@@ -46,7 +46,7 @@ if (sourcePath) {
         executeTransform(sourceFiles, fontPath)
     })
 } else {
-    handleError('请传入需要转换的svg图标文件和输出目录')
+    handleError('请传入需要转换的svg图标文件和输出目录\n\n eg: bk-font-generator ./source/xx/ ./dist/')
 }
 
 function executeTransform (files, dest) {
