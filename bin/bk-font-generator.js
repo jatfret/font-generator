@@ -65,11 +65,11 @@ function getOptions (dest) {
         fontName: 'bkicon',
         css: true,
         cssDest: path.join(dest, '../demo.css'),
-        cssTemplate: '../templates/css.hbs',
+        cssTemplate: path.resolve(__dirname, '../templates/css.hbs'),
         cssFontsUrl: path.join('./fonts/'),
         html: true,
         htmlDest: path.join(dest, '../demo.html'),
-        htmlTemplate: '../templates/html.hbs',
+        htmlTemplate: path.resolve(__dirname, '../templates/html.hbs'),
         templateOptions: {
             classPrefix: 'icon-',
             baseClassName: 'bk-icon'
